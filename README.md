@@ -1,14 +1,18 @@
 # shoppluto.github.io
-Building Pluto — a modern AI-powered e-commerce platform.
-<br>
-👋 Hi, I'm Yatharth
+# 🚀 Pluto
 
-Founder of Pluto
+Building a modern AI-powered e-commerce platform.
 
-Currently building:
-• E-Commerce Website
-• AI Shopping Assistant
-• Modern UI Components
+## Currently Building
 
-Tech:
-HTML • CSS • JavaScript • GitHub
+- 🛒 E-Commerce Website
+- 🤖 AI Shopping Assistant
+- 🎨 Modern UI Components
+
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- GitHub
+
