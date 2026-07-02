@@ -1,0 +1,45 @@
+/* ==========================================
+   Pluto Announcement Bar
+========================================== */
+
+.announcement-bar {
+
+    background: #0B1220;
+
+    color: var(--color-white);
+
+    font-size: var(--fs-sm);
+
+}
+
+.announcement-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-height: 42px;
+
+    gap: var(--space-4);
+
+}
+
+.announcement-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: 500;
+
+}
+
+.announcement-item span {
+
+    white-space: nowrap;
+
+}
