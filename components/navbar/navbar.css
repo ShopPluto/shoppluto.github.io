@@ -1,170 +1,437 @@
-/* =========================================
-   Pluto Navbar Component
-   ========================================= */
+/* ==========================================================
+                    PLUTO PREMIUM NAVBAR
+   Version : 4.0
+   Author  : Yatharth Sharma
+========================================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+    width:100%;
+    background:#ffffff;
+    border-bottom:1px solid #e8ecf3;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(15,23,42,.06);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f8fafc;
-}
+/* ==========================================
+   TOP BAR
+========================================== */
 
-/* ==========================
-   Navbar
-========================== */
+.navbar-top{
 
-.navbar {
+    display:flex;
 
-    width: 100%;
+    align-items:center;
 
-    background: #1e3a8a;
+    justify-content:space-between;
 
-    color: white;
+    gap:12px;
 
-}
-
-/* ==========================
-   Top Navigation
-========================== */
-
-.navbar-top {
-
-    max-width: 1400px;
-
-    margin: auto;
-
-    padding: 15px 30px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
+    height:82px;
 
 }
 
-/* Logo */
+/* ==========================================
+   LOGO
+========================================== */
 
-.logo a {
+.navbar-logo{
 
-    text-decoration: none;
+      width:190px;
 
-    color: white;
+    flex-shrink:0;
 
-    font-size: 32px;
+    display:flex;
 
-    font-weight: bold;
+    align-items:center;
 
-}
-
-/* Delivery */
-
-.delivery {
-
-    display: flex;
-
-    flex-direction: column;
-
-    font-size: 14px;
+    margin-left:-30px;
 
 }
 
-/* Search */
+.navbar-logo img{
 
-.search-container {
+    width: 200;
 
-    flex: 1;
+    height: auto;
 
-    display: flex;
+    display: black;
 
-}
-
-.search-container input {
-
-    flex: 1;
-
-    padding: 12px;
-
-    border: none;
-
-    outline: none;
-
-    border-radius: 8px 0 0 8px;
+    transition:.3s;
 
 }
 
-.search-btn {
+.navbar-logo img:hover{
 
-    padding: 12px 20px;
-
-    border: none;
-
-    background: #7c3aed;
-
-    color: white;
-
-    cursor: pointer;
-
-    border-radius: 0 8px 8px 0;
+    transform:scale(1.04);
 
 }
 
-/* User */
+/* ==========================================
+   DELIVERY
+========================================== */
 
-.user-actions {
+.delivery-box{
 
-    display: flex;
+    display:flex;
 
-    gap: 20px;
+    align-items:center;
 
-}
+    gap:12px;
 
-.user-actions a {
+    padding:10px 14px;
 
-    color: white;
+    border-radius:14px;
 
-    text-decoration: none;
+    cursor:pointer;
 
-    font-weight: 500;
-
-}
-
-/* ==========================
-   Bottom Menu
-========================== */
-
-.navbar-menu {
-
-    background: #152b66;
+    transition:.25s;
 
 }
 
-.navbar-menu ul {
+.delivery-box:hover{
 
-    max-width: 1400px;
-
-    margin: auto;
-
-    list-style: none;
-
-    display: flex;
-
-    gap: 25px;
-
-    padding: 12px 30px;
+    background:#F8FAFC;
 
 }
 
-.navbar-menu a {
+.delivery-icon{
 
-    color: white;
+    width:42px;
 
-    text-decoration: none;
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#EEF4FF;
+
+    font-size:18px;
+
+}
+
+.delivery-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.delivery-title{
+
+    font-size:12px;
+
+    color:#6B7280;
+
+}
+
+.delivery-address{
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.search-wrapper{
+
+    flex:1;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border:3px solid #E5E7EB;
+
+    border-radius:16px;
+
+    transition:.25s;
+
+}
+
+.search-wrapper:hover{
+
+    border-color:#CBD5E1;
+
+}
+
+.search-wrapper:focus-within{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+.search-category{
+
+    width:180px;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    background:#F8FAFC;
+
+    border-right:1px solid #E5E7EB;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.search-input{
+
+    flex:1;
+
+}
+
+.search-input input{
+
+    width:100%;
+
+    height:54px;
+
+    border:none;
+
+    outline:none;
+
+    padding:0 20px;
+
+    font-size:15px;
+
+    background:transparent;
+
+    color:#111827;
+
+}
+
+.search-input input::placeholder{
+
+    color:#9CA3AF;
+
+}
+
+.search-button{
+
+    width:60px;
+
+    height:100%;
+
+    border:none;
+
+    background:#2563EB;
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search-button:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.navbar-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.action-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:72px;
+
+    text-decoration:none;
+
+    color:#111827;
+
+    transition:.3s;
+
+}
+
+.action-item:hover{
+
+    color:#2563EB;
+
+}
+
+.action-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#F8FAFC;
+
+    font-size:20px;
+
+    transition:.25s;
+
+    position:relative;
+
+}
+
+.action-item:hover .action-icon{
+
+    background:#EEF4FF;
+
+}
+
+.action-text{
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.cart-count{
+
+    position:absolute;
+
+    top:-3px;
+
+    right:-4px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#EF4444;
+
+    color:#ffffff;
+
+    font-size:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1200px){
+
+    .delivery-box{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .search-category{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar-top{
+
+        flex-wrap:wrap;
+
+        height:auto;
+
+        padding:18px 0;
+
+    }
+
+    .search-wrapper{
+
+        width:100%;
+
+        order:3;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .action-text{
+
+        display:none;
+
+    }
 
 }
